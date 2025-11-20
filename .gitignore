@@ -1,0 +1,57 @@
+### Android / Gradle ###
+.gradle/
+build/
+**/build/
+local.properties
+.gradle/
+captures/
+.externalNativeBuild/
+.cxx/
+
+### Android Studio ###
+.idea/
+*.iml
+*.apk
+*.ap_
+*.aab
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+### Log files ###
+*.log
+
+### Keystore files (very important) ###
+*.jks
+*.keystore
+
+### Gradle Wrapper ###
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+### firebase / sensitive ###
+google-services.json
+firebase-debug.log
+
+### Temporary files ###
+*.tmp
+*.temp
