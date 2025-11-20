@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Login.ModifyInfoActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_bottom_card"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="107dp"
+                android:layout_height="81dp"
+                android:layout_marginStart="4dp"
+                android:contentDescription="App Logo"
+                android:src="@drawable/nsuh_logo"
+                app:tint="#1E2A38"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/updateUserInfoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Modify Info"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar" />
+
+    <TextView
+        android:id="@+id/nowNickname"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="45dp"
+        android:padding="5sp"
+        android:text="Current Nickname"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateUserInfoTitle" />
+
+    <TextView
+        android:id="@+id/nowUserNickname"
+        android:layout_width="190sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="#E0E0E0"
+        android:padding="5sp"
+        android:text="Nickname"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toEndOf="@+id/nowNickname"
+        app:layout_constraintTop_toBottomOf="@+id/updateUserInfoTitle" />
+
+    <TextView
+        android:id="@+id/newNickname"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="27dp"
+        android:padding="5sp"
+        android:text="Nickname"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nowUserNickname" />
+
+    <EditText
+        android:id="@+id/inputNewNickname"
+        android:layout_width="190sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Nickname (Optional)"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toEndOf="@+id/newNickname"
+        app:layout_constraintTop_toBottomOf="@+id/nowUserNickname" />
+
+    <TextView
+        android:id="@+id/nowDeviceID"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="32dp"
+        android:padding="5sp"
+        android:text="Current Bowlname"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newNickname" />
+
+    <TextView
+        android:id="@+id/nowUserDeviceID"
+        android:layout_width="190sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#E0E0E0"
+        android:padding="5sp"
+        android:text="Bowlname"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toEndOf="@+id/nowNickname"
+        app:layout_constraintTop_toBottomOf="@+id/inputNewNickname" />
+
+    <TextView
+        android:id="@+id/newDeviceIDView"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="27dp"
+        android:padding="5sp"
+        android:text="Bowlname"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nowUserDeviceID" />
+
+    <EditText
+        android:id="@+id/inputDeviceID"
+        android:layout_width="190sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Bowlname (Optional)"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toEndOf="@+id/newDeviceIDView"
+        app:layout_constraintTop_toBottomOf="@+id/nowUserDeviceID" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#BFD6EC"
+        android:padding="12dp"
+        android:text="Save Info"
+        android:textColor="#243B4A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDeviceID" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

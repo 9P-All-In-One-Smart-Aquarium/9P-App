@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_9p"
+        android:label="내 손 안의 어항"
+        android:roundIcon="@drawable/logo_9p"
+        android:supportsRtl="true"
+        android:theme="@style/Theme._9P"
+        tools:targetApi="31"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="false">
+
+        <activity
+            android:name=".UI.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".UI.Login.InfoSetActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".UI.Login.ModifyInfoActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".UI.FrontActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name=".UI.front.MyFishbowlMonitorActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name=".UI.front.SettingsActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name=".UI.notification.NotificationLogActivity" android:exported="false" android:screenOrientation="portrait"/>
+
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.a9p.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <meta-data android:name="com.google.android.actions" android:resource="@xml/styles"/>
+
+    </application>
+</manifest>

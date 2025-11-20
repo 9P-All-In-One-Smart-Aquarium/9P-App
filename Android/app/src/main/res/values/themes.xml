@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme._9P" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">#EDF4FA</item>
+        <item name="android:statusBarColor">#EDF4FA</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme._9P" parent="Base.Theme._9P" />
+</resources>
