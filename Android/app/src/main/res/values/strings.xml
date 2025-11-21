@@ -27,14 +27,14 @@
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
     <string-array name="sort_options">
-        <item>최신순</item>
-        <item>오래된순</item>
+        <item>Sort by newest</item>
+        <item>Sort by oldest</item>
     </string-array>
 
     <string-array name="date_filter_options">
-        <item>전체</item>
-        <item>오늘</item>
-        <item>지난 7일</item>
-        <item>지난 30일</item>
+        <item>All</item>
+        <item>Today</item>
+        <item>Least 7 Days</item>
+        <item>Least 30 Days</item>
     </string-array>
 </resources>
