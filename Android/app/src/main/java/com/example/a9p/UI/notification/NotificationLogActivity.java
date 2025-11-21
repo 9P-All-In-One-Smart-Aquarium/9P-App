@@ -216,7 +216,7 @@ public class NotificationLogActivity extends AppCompatActivity {
             case 1: return new Date(currentTime - 24 * 60 * 60 * 1000);
             case 2: return new Date(currentTime - 7 * 24 * 60 * 60 * 1000);
             case 3: return new Date(currentTime - 30 * 24 * 60 * 60 * 1000);
-            default: return null; // 전체
+            default: return null;
         }
     }
 
