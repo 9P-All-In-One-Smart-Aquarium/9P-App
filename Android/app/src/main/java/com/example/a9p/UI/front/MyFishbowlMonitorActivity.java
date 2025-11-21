@@ -63,7 +63,7 @@ public class MyFishbowlMonitorActivity extends AppCompatActivity {
         DeviceID = sharedPreferences.getString("DeviceID", "DeviceNONE");
 
         if (DeviceID == null || DeviceID.isEmpty() || DeviceID.equals("DeviceNONE")) {
-            Toast.makeText(this, "디바이스 정보가 없습니다. 메인 화면으로 돌아갑니다.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "No device information found. Returning to the main screen.", Toast.LENGTH_SHORT).show();
             goToHomeScreen();
             return;
         }
