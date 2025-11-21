@@ -69,7 +69,7 @@ public class MyFishbowlMonitorActivity extends AppCompatActivity {
         }
 
         binding.deviceName.setText(DeviceID);
-        binding.fishSpecies.setText(sharedPreferences.getString("FishSpeciesKO", "(알 수 없음)"));
+        binding.fishSpecies.setText(sharedPreferences.getString("FishSpeciesKO", "(Unknown)"));
 
     }
 
