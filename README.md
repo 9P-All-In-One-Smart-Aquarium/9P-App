@@ -37,6 +37,7 @@ At this stage, the app becomes the bridge that converts user actions into actual
 
 3️⃣ Function Processing Stage — User-Centered Features
 
+<img width="1280" height="671" alt="image" src="https://github.com/user-attachments/assets/d2f64015-9550-49cf-9158-c1de1ad79c5b" />
 
 The app provides several key screens:
 
